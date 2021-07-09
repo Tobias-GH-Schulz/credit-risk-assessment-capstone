@@ -1,6 +1,6 @@
-# Welcome to MkDocs
+# Welcome to my capstone project "Credit Risk Assessment"
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+
 
 ## Commands
 
