@@ -1,5 +1,7 @@
-site_name: Credit Risk Assessment Capstone
-site_url: https://credit-risk-assessment.herokuapp.com/
+site_name: Credit Risk Assessment
+site_url: https://Tobias-GH-Schulz.github.io/credit-risk-assessment-capstone/ 
+repo_url: https://www.github.com/tobias-gh-schulz/credit-risk-assessment-capstone
+repo_name: tobias-gh-schulz/credit-risk-assessment-capstone
 
 theme:
   name:
