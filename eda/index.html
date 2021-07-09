@@ -245,6 +245,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#exploratory-data-analysis" class="md-nav__link">
+    Exploratory data analysis
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#outliers" class="md-nav__link">
     Outliers
   </a>
@@ -259,8 +266,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#distributions" class="md-nav__link">
-    Distributions
+  <a href="#distribution" class="md-nav__link">
+    Distribution
   </a>
   
 </li>
@@ -299,6 +306,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#exploratory-data-analysis" class="md-nav__link">
+    Exploratory data analysis
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#outliers" class="md-nav__link">
     Outliers
   </a>
@@ -313,8 +327,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#distributions" class="md-nav__link">
-    Distributions
+  <a href="#distribution" class="md-nav__link">
+    Distribution
   </a>
   
 </li>
@@ -333,16 +347,24 @@
                 
                 
                 <h1 id="welcome-to-my-capstone-project-credit-risk-assessment">Welcome to my capstone project "Credit Risk Assessment"</h1>
+<h2 id="exploratory-data-analysis">Exploratory data analysis</h2>
+<p>The data that I used for this project is loan data of around 32000 borrowers that contains 12 columns including the target variable “loan status”. In the exploratory data analysis I analyzed the data, searched for patterns and prepared the data for training. </p>
 <h2 id="outliers">Outliers</h2>
+<p>The data had some outliers in various features like</p>
 <ul>
-<li></li>
-<li></li>
-<li></li>
+<li>person employment lenght which contained a max of 123 years </li>
+<li>person income which contained a max of 6.000.000 $ with a median of 55.000 $ </li>
+<li>person age which contained a max of 144 years</li>
 </ul>
+<p>After some further exploration of these outliers I deleted the rows containing these values. </p>
 <h2 id="nan-values">NaN Values</h2>
-<pre><code>As shown in the eda notebook there were about 3500 rows with NaN values.
-</code></pre>
-<h2 id="distributions">Distributions</h2>
+<p>The data had two features that contained some NaN values. </p>
+<ul>
+<li>There were 895 rows with NaN values in the column person employment length. I imputed these missing values with the median value for all employment length.</li>
+<li>There were 3116 rows with NaN values in the column loan interest rate. I deleted the rows with missing values in this column. </li>
+</ul>
+<h2 id="distribution">Distribution</h2>
+<p>In credit risk assessment it is common to deal with data that is highly imbalanced regarding the target class. This is because usually there are more people that pay back their loan than people that do not pay back their loan. In the used dataset there are about 3.58 times more non defaults than defaults. In the final model training I am therefore using different methods to optimize for imbalanced data.</p>
                 
               
               
