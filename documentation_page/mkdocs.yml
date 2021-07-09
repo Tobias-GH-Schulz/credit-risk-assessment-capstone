@@ -1,0 +1,13 @@
+site_name: Credit Risk Assessment Capstone
+site_url: https://credit-risk-assessment.herokuapp.com/
+
+theme:
+  name:
+    material
+  language:
+    en
+  plugins:
+    - search
+nav:
+  - Introduction: 'index.md'
+  - Exploratoy data analysis: 'eda.md'
